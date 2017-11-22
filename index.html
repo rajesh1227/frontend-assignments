@@ -2,33 +2,27 @@
 <html>
 <head>
 	<title>acadgild assignments</title>
-	<style type="text/css">
-		.imghover2:hover
-		{
-			border-radius: 50px;
-			transition: width 500px;	
-			transition-duration: 3s;
-			transition: rotate(90deg);
-		}
-		.div-box{
+	<style >
+		.box img{
+			height: 200px;			/*IMAGE HEIGHT AND WIDTH*/
 			width: 200px;
-			height: 200px;
-			background-color: blue;
-			transition-property: width , height;	/*transition height and width  on hover*/
-			transition-duration: 3s;	/*duration of div*/
-			transform: rotate(20deg);	/*rotate div*/
-
-			}
-		.div-box:hover{
-			width: 500px;
-			height: 400px;	/*width and height changing  on mouse hover */
-			display: block;
+			position: relative;
+			animation-duration: 5s;				/*ANIMATION DURATION */
+			animation:  mymove 5s ;
+			animation-iteration-count: infinite;		/*ANIMATION ITRATION PROPERTY*/
+		}
+		#ride{animation-timing-function: linear;}		/*ANIMATION TIMING FUNCTION */
+		@keyframes mymove					/*@KEYFRAME*/
+	 {
+    from {left: 0px;}		
+    to {left: 500px;}
 		}
 	</style>
 </head>
 <body>
-	<div class="div-box">
-		<img src="eagle-1523807.jpg" class="imghover2">
+	<div class="box">
+		<img src="bicycle-img.jpg" id="ride" >		<!-- IMAGE  -->
 	</div>
+			<!-- HOPE I DID AS EXPECTED -->
 </body>
 </html>
