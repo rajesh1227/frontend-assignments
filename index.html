@@ -1,41 +1,24 @@
 <!DOCTYPE html>
-	<html>
-	<head>
-		<title>acadgild assignmens</title>
-		<style>
-			.parent-div button{
-
-				position: relative;
-				height: 50px;
-				width: 200px;
-				background-color: pink;
-				display: inline-block;		/*DISPLAY INLINE BLOCK*/
-
-
-			}
-			.chaild-div{
-				display: none;
-				position: absolute;
-				background-color: yellow;
-				
-
-			}
-			.parent-div:hover .chaild-div{		/*MOUSE HOVER PROPERTY*/
-				display: block;
-				
-			}
-		</style>
-	</head>
-	<body>
-		<h1>hover on button for chaild elements</h1>
-		<div class="parent-div">
-			<button>dropdown botton</button>		<!-- dropdown button -->
-			<div class="chaild-div">
-				<p>html</p>					<!-- chaild elements of parent div -->
-				<p>css</p>				
-				<p>javascript</p>
-			</div>
-
-		</div>
-	</body>
-	</html>
+<html>
+<head>
+	<title>acadgild assignments</title>
+	<style type="text/css">
+		.mousehover:hover{
+			color: yellow;
+		}
+		.hover2:hover{
+			color: pink;
+		}
+		.hover3:hover{
+			color: orange;
+		}
+	</style>
+</head>
+<body>
+	<div class="mousehover">
+		<p>hover the mouse to change text color</p>
+	</div>
+	<div class="hover2">acadgild</div><br><br>
+	<div class="hover3">pseudo class property hover to change the font color.</div>
+</body>
+</html>
