@@ -3,22 +3,32 @@
 <head>
 	<title>acadgild assignments</title>
 	<style type="text/css">
-		.mousehover:hover{
-			color: yellow;
+		.imghover2:hover
+		{
+			border-radius: 50px;
+			transition: width 500px;	
+			transition-duration: 3s;
+			transition: rotate(90deg);
 		}
-		.hover2:hover{
-			color: pink;
-		}
-		.hover3:hover{
-			color: orange;
+		.div-box{
+			width: 200px;
+			height: 200px;
+			background-color: blue;
+			transition-property: width , height;	/*transition height and width  on hover*/
+			transition-duration: 3s;	/*duration of div*/
+			transform: rotate(20deg);	/*rotate div*/
+
+			}
+		.div-box:hover{
+			width: 500px;
+			height: 400px;	/*width and height changing  on mouse hover */
+			display: block;
 		}
 	</style>
 </head>
 <body>
-	<div class="mousehover">
-		<p>hover the mouse to change text color</p>
+	<div class="div-box">
+		<img src="eagle-1523807.jpg" class="imghover2">
 	</div>
-	<div class="hover2">acadgild</div><br><br>
-	<div class="hover3">pseudo class property hover to change the font color.</div>
 </body>
 </html>
